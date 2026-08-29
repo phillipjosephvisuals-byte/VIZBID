@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - VIZBID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mobile-header">
+    <div class="mobile-brand">VIZBID <span>// BD</span></div>
+    <button class="mobile-menu-btn" onclick="toggleNav()" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-wrapper">
+        <a href="index.html" style="text-decoration:none;">
+          <div class="brand-box">
+            <h1>VIZBID</h1>
+            <p>Visual Business Development</p>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About Us</a>
+        <a href="products.html" class="nav-item">Products</a>
+        <a href="contact.html" class="nav-item active">Contact Us</a>
+      </nav>
+    </aside>
+
+    <main class="content-wrapper">
+      <section class="content-well">
+        
+        <div id="contact-form-wrapper" class="form-card">
+          <div class="form-header-bar">
+            <h2>Contact Us</h2>
+          </div>
+          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="form-control" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="contact-success" class="state-message-sent">
+          <h3>Your message has been sent!</h3>
+          <p>Thank you for reaching out. A VIZBID specialist will get back to you shortly.</p>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('sidebar').classList.toggle('mobile-open');
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contact-form-wrapper').style.display = 'none';
+      document.getElementById('contact-success').classList.add('active');
+    }
+  </script>
+</body>
+</html>

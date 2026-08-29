@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise - Predictive Pipeline - VIZBID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mobile-header">
+    <div class="mobile-brand">VIZBID <span>// BD</span></div>
+    <button class="mobile-menu-btn" onclick="toggleNav()" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-wrapper">
+        <a href="index.html" style="text-decoration:none;">
+          <div class="brand-box">
+            <h1>VIZBID</h1>
+            <p>Visual Business Development</p>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About Us</a>
+        <a href="products.html" class="nav-item active">Products</a>
+        <a href="contact.html" class="nav-item">Contact Us</a>
+      </nav>
+    </aside>
+
+    <main class="content-wrapper">
+      <header class="sub-nav-banner">
+        <div class="sub-nav-header">
+          <h2>Predictive Pipeline</h2>
+        </div>
+        <div class="sub-nav-tabs-wrapper">
+          <div class="category-label">Enterprise</div>
+          <nav class="sub-nav-tabs">
+            <a href="enterprise-proposal-library.html" class="sub-tab">Proposal Library</a>
+            <a href="enterprise-gap-analysis.html" class="sub-tab">Gap Analysis</a>
+            <a href="enterprise-compliance-evaluator.html" class="sub-tab">Compliance Evaluator</a>
+            <a href="enterprise-predictive-pipeline.html" class="sub-tab active">Predictive Pipeline</a>
+            <a href="enterprise-team-profiles.html" class="sub-tab">Team Profiles</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="content-well content-well-flush">
+        <div class="detail-view">
+          <div class="media-placeholder">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7l-3 3.72L9 13l-3 4h12l-4-5z"/>
+            </svg>
+          </div>
+          <p class="lead-text">
+            Forecast opportunity outcomes and identify strategic capture priorities with predictive scoring tailored for government and defense contractors.
+          </p>
+          <a href="request-demo.html" class="btn btn-primary">Request Demo</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('sidebar').classList.toggle('mobile-open');
+    }
+  </script>
+</body>
+</html>
