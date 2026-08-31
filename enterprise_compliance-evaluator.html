@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliance Evaluator - OmniBid Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="feature-page-body">
+
+  <!-- Main Top Header -->
+  <header class="feature-header">
+    <div class="header-main-bar">
+      <a href="index.html" class="brand-link">
+        <span class="brand-logo-text">OmniBid</span>
+      </a>
+
+      <nav class="header-main-nav">
+        <a href="index.html" class="top-nav-item">HOME</a>
+        <a href="products.html" class="top-nav-item">PRODUCTS</a>
+        <a href="about.html" class="top-nav-item">ABOUT US</a>
+        <a href="contact.html" class="top-nav-item">CONTACT</a>
+      </nav>
+
+      <button class="mobile-menu-btn" onclick="toggleFeatureNav()" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Secondary Product Sub-Nav Ribbon -->
+    <div class="subnav-ribbon" id="subnavRibbon">
+      <div class="subnav-content">
+        <div class="subnav-tier-badge">
+          <span>ENTERPRISE</span>
+        </div>
+        <div class="subnav-divider"></div>
+        <div class="subnav-links">
+          <a href="proposal-library.html" class="subnav-link">PROPOSAL LIBRARY</a>
+          <a href="gap-analysis.html" class="subnav-link">GAP ANALYSIS</a>
+          <a href="compliance-evaluator.html" class="subnav-link active">COMPLIANCE EVALUATOR</a>
+          <a href="predictive-pipeline.html" class="subnav-link">PREDICTIVE PIPELINE</a>
+          <a href="team-profiles.html" class="subnav-link">TEAM PROFILES</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Page Container -->
+  <main class="feature-container">
+
+    <!-- Top Hero Screenshot/Graphic Placeholder -->
+    <section class="feature-hero-media">
+      <div class="hero-placeholder-card">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="feature-content-wrap">
+      
+      <!-- Headline & Tagline -->
+      <div class="feature-headline-row">
+        <div class="title-stack">
+          <h1 class="feature-title-orange">COMPLIANCE</h1>
+          <h1 class="feature-title-orange">EVALUATOR</h1>
+        </div>
+        <div class="tagline-stack">
+          <p class="tagline-text">Secure Compliance...</p>
+          <p class="tagline-text">Secure Your Win.</p>
+        </div>
+      </div>
+
+      <!-- Lead Summary Paragraph -->
+      <p class="feature-intro-text">
+        In government contracting, a single non-compliant response can derail a multi-year capture effort. Stop relying on manual color teams and disconnected checklists. The OmniBid Compliance Evaluator is an automated validation engine that shreds your proposal narrative against solicitation requirements to instantly reveal compliance deficits and provide actionable, auditable guidance for correction.
+      </p>
+
+      <!-- 3-Card Feature Grid -->
+      <div class="feature-card-grid">
+        <div class="feature-card-orange">
+          <h3 class="card-title">Instant<br>Traceability</h3>
+          <p class="card-text">
+            Upload your latest proposal draft into our Compliance Evaluator. Within minutes, your document is instantly mapped, scanning the narrative against the fully shredded solicitation requirement database managed in your <strong>OmniBid Pipeline</strong>. An active cross-reference matrix is built with zero manual data entry.
+          </p>
+        </div>
+
+        <div class="feature-card-orange">
+          <h3 class="card-title">Status<br>Indicators</h3>
+          <p class="card-text">
+            Our software utilizes deep learning algorithms and predefined evaluation criteria to assign objective scores to each requirement. The user interface generates visual summaries, allowing leadership to instantly assess global compliance health and risk exposure.
+          </p>
+        </div>
+
+        <div class="feature-card-orange">
+          <h3 class="card-title">Actionable<br>Mitigation</h3>
+          <p class="card-text">
+            The Compliance Evaluator provides suggestions and guidance based on evaluation standards and industry best practices. It precisely outlines exactly which narrative requirements are missing or non-compliant, and links back to relevant boilerplate assets or team profile gaps for rapid correction.
+          </p>
+        </div>
+      </div>
+
+      <!-- Secondary Split Section (Text + Media) -->
+      <div class="feature-split-section">
+        <div class="split-text-col">
+          <h2 class="split-sub-title">Beyond a 'Yes/No' Checklist:</h2>
+          <h3 class="split-main-title">Data-Driven Guidance for Every Draft</h3>
+          <p class="split-description">
+            The Compliance Evaluator provides a single, consolidated source of truth for proposal hygiene. It generates an 'Auditable List' that can be assigned, tracked, and verified across teams, eliminating standard color-team confusion and ensuring every requirement is robustly addressed by the final submission deadline.
+          </p>
+        </div>
+        <div class="split-media-col">
+          <div class="secondary-media-placeholder">
+            <svg class="placeholder-icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Button -->
+      <div class="cta-center-row">
+        <a href="contact.html" class="btn-demo-cta">Request Demo</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Enterprise Confidential Footer -->
+  <footer class="feature-footer">
+    <p>© 2024 OmniBid Analytics. | Proprietary and Confidential for Enterprise Users.</p>
+  </footer>
+
+  <script>
+    function toggleFeatureNav() {
+      document.querySelector('.header-main-nav').classList.toggle('mobile-open');
+      document.getElementById('subnavRibbon').classList.toggle('mobile-open');
+    }
+  </script>
+</body>
+</html>
