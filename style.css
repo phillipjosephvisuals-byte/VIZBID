@@ -415,3 +415,86 @@ body {
     width: 100%;
   }
 }
+/* ==========================================================================
+   Contact Form & Feedback States
+   ========================================================================== */
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--charcoal-med);
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--charcoal-dark);
+  background: #F8FAFC;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.form-control:focus {
+  background: #FFFFFF;
+  border-color: var(--primary-orange-top);
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.15);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-action-row {
+  margin-top: 1.5rem;
+}
+
+/* Success State Screen */
+.state-message-sent {
+  display: none;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.state-message-sent.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255, 94, 20, 0.1);
+  color: var(--primary-orange-bot);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .form-group-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
