@@ -152,29 +152,43 @@ body {
   height: 110px;
   width: 100%;
   position: relative;
+  background: transparent;
+  isolation: isolate;
   transition: background-color 0.2s ease;
+}
+
+/* Glass Hover Box Background */
+.nav-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--glass-bg);
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 4px 20px rgba(142, 45, 1, 0.15);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .nav-label {
   font-size: 1.85rem;
   font-weight: 800;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.65);
   text-transform: uppercase;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* Hover States */
+.nav-item:hover::before {
+  opacity: 1;
 }
 
 .nav-item:hover .nav-label {
-  color: #FFFFFF;
-}
-
-/* Active Highlight Bar (matching SVG x=-2, y=343, w=443, h=134) */
-.nav-item.active {
-  background-color: rgba(255, 255, 255, 0.08);
-  height: 134px;
-}
-
-.nav-item.active .nav-label {
   color: #FFFFFF;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
@@ -266,9 +280,6 @@ body {
     padding-left: 60px;
     height: 90px;
   }
-  .nav-item.active {
-    height: 110px;
-  }
   .nav-label {
     font-size: 1.5rem;
   }
@@ -303,10 +314,6 @@ body {
   .nav-item {
     height: 64px;
     padding-left: 2rem;
-  }
-
-  .nav-item.active {
-    height: 64px;
   }
 
   .nav-label {
