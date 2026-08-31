@@ -3,38 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - VIZBID</title>
+  <title>About Us - OmniBid Analytics</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="mobile-header">
-    <div class="mobile-brand">VIZBID <span>// BD</span></div>
+
+  <header class="mobile-header">
+    <div class="mobile-brand">
+      <span class="brand-name">OmniBid</span>
+      <span class="brand-sub">ANALYTICS</span>
+    </div>
     <button class="mobile-menu-btn" onclick="toggleNav()" aria-label="Toggle Navigation">
       <span></span><span></span><span></span>
     </button>
-  </div>
+  </header>
 
-  <div class="app-container">
+  <div class="app-layout">
     <aside class="sidebar" id="sidebar">
-      <div class="brand-wrapper">
-        <a href="index.html" style="text-decoration:none;">
-          <div class="brand-box">
-            <h1>VIZBID</h1>
-            <p>Visual Business Development</p>
+      
+      <div class="brand-container">
+        <a href="index.html" class="glass-logo-box">
+          <div class="logo-inner">
+            <span class="logo-title">OmniBid</span>
+            <div class="logo-divider-row">
+              <span class="logo-line"></span>
+              <span class="logo-sub">ANALYTICS</span>
+              <span class="logo-line"></span>
+            </div>
           </div>
         </a>
       </div>
-      <nav class="nav-links">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item active">About Us</a>
-        <a href="products.html" class="nav-item">Products</a>
-        <a href="contact.html" class="nav-item">Contact Us</a>
+
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <span class="nav-label">HOME</span>
+        </a>
+        <a href="products.html" class="nav-item">
+          <span class="nav-label">PRODUCTS</span>
+        </a>
+        <a href="about.html" class="nav-item">
+          <span class="nav-label">ABOUT US</span>
+        </a>
+        <a href="contact.html" class="nav-item">
+          <span class="nav-label">CONTACT</span>
+        </a>
       </nav>
     </aside>
 
-    <main class="content-wrapper">
+    <main class="main-canvas">
       <section class="content-well">
-        <h2 class="page-title">About Us</h2>
+        <h1 class="page-title">About OmniBid</h1>
+        <p class="lead-text">
+          OmniBid Analytics transforms complex proposal pipelines and federal procurement data into visual, high-impact business intelligence. We bridge the gap between capture strategy and measurable win rates.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3>Visual Capture</h3>
+            <p>Interactive data visualization that turns convoluted opportunity matrices into actionable capture plans.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3>Predictive Analytics</h3>
+            <p>Machine learning models built specifically on historical procurement trends and competitor positioning data.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Enterprise Scale</h3>
+            <p>Unified dashboards designed for cross-functional proposal, pricing, and executive capture teams.</p>
+          </div>
+        </div>
+
+        <div class="btn-group" style="margin-top: 2.5rem;">
+          <a href="products.html" class="btn btn-primary">Explore Products</a>
+          <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('sidebar').classList.toggle('mobile-open');
+    }
+  </script>
+</body>
+</html>        <h2 class="page-title">About Us</h2>
         <p class="lead-text">
           Founded on the conviction that proposal intelligence should be transparent, visual, and agile, VIZBID empowers federal and commercial capture teams to streamline gap analyses, matrix requirements, and scale proposal pipelines with confidence.
         </p>
