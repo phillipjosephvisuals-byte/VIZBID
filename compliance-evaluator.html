@@ -8,8 +8,10 @@
 </head>
 <body class="feature-page-body">
 
-  <!-- Main Top Header -->
+  <!-- Dual-Tier Header -->
   <header class="feature-header">
+    
+    <!-- Top Bar: Logo Left, Primary Nav Right -->
     <div class="header-main-bar">
       <a href="index.html" class="brand-link">
         <span class="brand-logo-text">OmniBid</span>
@@ -22,33 +24,35 @@
         <a href="contact.html" class="top-nav-item">CONTACT</a>
       </nav>
 
-      <button class="mobile-menu-btn" onclick="toggleFeatureNav()" aria-label="Toggle Navigation">
+      <button class="feature-mobile-toggle" onclick="toggleFeatureNav()" aria-label="Toggle Navigation">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <!-- Secondary Product Sub-Nav Ribbon -->
+    <!-- Secondary Sub-Nav Ribbon: Charcoal Background, Centered Links -->
     <div class="subnav-ribbon" id="subnavRibbon">
-      <div class="subnav-content">
-        <div class="subnav-tier-badge">
-          <span>ENTERPRISE</span>
+      <div class="subnav-grid">
+        <div class="subnav-left">
+          <a href="enterprise.html" class="subnav-tier-badge">ENTERPRISE</a>
         </div>
-        <div class="subnav-divider"></div>
-        <div class="subnav-links">
+
+        <nav class="subnav-center-links">
           <a href="proposal-library.html" class="subnav-link">PROPOSAL LIBRARY</a>
           <a href="gap-analysis.html" class="subnav-link">GAP ANALYSIS</a>
           <a href="compliance-evaluator.html" class="subnav-link active">COMPLIANCE EVALUATOR</a>
           <a href="predictive-pipeline.html" class="subnav-link">PREDICTIVE PIPELINE</a>
           <a href="team-profiles.html" class="subnav-link">TEAM PROFILES</a>
-        </div>
+        </nav>
+
+        <div class="subnav-right-spacer"></div>
       </div>
     </div>
   </header>
 
-  <!-- Main Page Container -->
+  <!-- Main Content Container -->
   <main class="feature-container">
 
-    <!-- Top Hero Screenshot/Graphic Placeholder -->
+    <!-- Hero Screenshot/Graphic Placeholder -->
     <section class="feature-hero-media">
       <div class="hero-placeholder-card">
         <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
@@ -79,7 +83,7 @@
         In government contracting, a single non-compliant response can derail a multi-year capture effort. Stop relying on manual color teams and disconnected checklists. The OmniBid Compliance Evaluator is an automated validation engine that shreds your proposal narrative against solicitation requirements to instantly reveal compliance deficits and provide actionable, auditable guidance for correction.
       </p>
 
-      <!-- 3-Card Feature Grid -->
+      <!-- 3-Card Orange Grid -->
       <div class="feature-card-grid">
         <div class="feature-card-orange">
           <h3 class="card-title">Instant<br>Traceability</h3>
