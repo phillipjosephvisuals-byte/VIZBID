@@ -3,68 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enterprise Tier - VIZBID</title>
+  <title>Enterprise Tier - OmniBid Analytics</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="mobile-header">
-    <div class="mobile-brand">VIZBID <span>// BD</span></div>
+
+  <!-- Mobile Header -->
+  <header class="mobile-header">
+    <div class="mobile-brand">
+      <span class="brand-name">OmniBid</span>
+      <span class="brand-sub">ANALYTICS</span>
+    </div>
     <button class="mobile-menu-btn" onclick="toggleNav()" aria-label="Toggle Navigation">
       <span></span><span></span><span></span>
     </button>
-  </div>
+  </header>
 
-  <div class="app-container">
+  <div class="app-layout">
+    <!-- Split Sidebar with Sub-Navigation -->
     <aside class="sidebar" id="sidebar">
-      <div class="brand-wrapper">
-        <a href="index.html" style="text-decoration:none;">
-          <div class="brand-box">
-            <h1>VIZBID</h1>
-            <p>Visual Business Development</p>
+      
+      <!-- Aero Glass Brand Container -->
+      <div class="brand-container">
+        <a href="index.html" class="glass-logo-box">
+          <div class="logo-inner">
+            <span class="logo-title">OmniBid</span>
+            <div class="logo-divider-row">
+              <span class="logo-line"></span>
+              <span class="logo-sub">ANALYTICS</span>
+              <span class="logo-line"></span>
+            </div>
           </div>
         </a>
       </div>
-      <nav class="nav-links">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="about.html" class="nav-item">About Us</a>
-        <a href="products.html" class="nav-item active">Products</a>
-        <a href="contact.html" class="nav-item">Contact Us</a>
+
+      <!-- Sidebar Navigation with Product Sub-links -->
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <span class="nav-label">HOME</span>
+        </a>
+        
+        <a href="products.html" class="nav-item">
+          <span class="nav-label">PRODUCTS</span>
+        </a>
+
+        <!-- Sub-tier Navigation (Enterprise / Business) -->
+        <div class="sub-nav-group">
+          <a href="enterprise.html" class="sub-nav-item active">
+            <span class="sub-nav-label">ENTERPRISE</span>
+          </a>
+          <a href="business.html" class="sub-nav-item">
+            <span class="sub-nav-label">BUSINESS</span>
+          </a>
+        </div>
+
+        <a href="about.html" class="nav-item">
+          <span class="nav-label">ABOUT US</span>
+        </a>
+        
+        <a href="contact.html" class="nav-item">
+          <span class="nav-label">CONTACT</span>
+        </a>
       </nav>
     </aside>
 
-    <main class="content-wrapper">
-      <section class="content-well">
-        <h2 class="page-title">Enterprise</h2>
-        <p class="lead-text">
-          Complete capture operations infrastructure tailored for large teams requiring predictive forecasting, personnel profiling, and advanced governance.
+    <!-- Main Tier Presentation Area -->
+    <main class="tier-canvas">
+      
+      <!-- Top Dark Header Banner -->
+      <section class="tier-header-banner">
+        <h1 class="tier-banner-title">ENTERPRISE</h1>
+      </section>
+
+      <!-- Tier Content Container -->
+      <section class="tier-content-body">
+        <p class="tier-lead-text">
+          Enterprise capture operations infrastructure engineered for large organizations requiring automated compliance shredding, multi-vendor gap bridging, predictive win forecasting, and automated staffing clearance governance.
         </p>
 
-        <div class="cards-grid">
-          <a href="enterprise-proposal-library.html" class="feature-card">
-            <h3>Proposal Library</h3>
-            <p>Enterprise-scale narrative index with multi-team permission control.</p>
-          </a>
-          <a href="enterprise-gap-analysis.html" class="feature-card">
-            <h3>Gap Analysis</h3>
-            <p>Multi-vendor teammate alignment and automated gap bridging.</p>
-          </a>
-          <a href="enterprise-compliance-evaluator.html" class="feature-card">
-            <h3>Compliance Evaluator</h3>
-            <p>AI-assisted requirement shredding and matrix generation.</p>
-          </a>
-        </div>
+        <!-- 5-Card Aero Glass Feature Grid -->
+        <div class="aero-cards-container">
+          
+          <!-- Top Row: 3 Cards -->
+          <div class="aero-cards-row row-3">
+            
+            <a href="proposal-library.html" class="aero-glass-card">
+              <div class="aero-glass-shine"></div>
+              <h3 class="card-heading">PROPOSAL<br>LIBRARY</h3>
+              <p class="card-desc">
+                Enterprise-scale proposal narrative index with multi-team permission controls, shredded RFP libraries, and verified boilerplate repositories.
+              </p>
+            </a>
 
-        <div class="cards-grid-center" style="margin-top: 2rem;">
-          <a href="enterprise-predictive-pipeline.html" class="feature-card">
-            <h3>Predictive Pipeline</h3>
-            <p>Win-probability forecasting based on historical capture parameters.</p>
-          </a>
-          <a href="enterprise-team-profiles.html" class="feature-card">
-            <h3>Team Profiles</h3>
-            <p>Automated resume tailoring and staffing clearance matrixing.</p>
-          </a>
+            <a href="gap-analysis.html" class="aero-glass-card">
+              <div class="aero-glass-shine"></div>
+              <h3 class="card-heading">GAP<br>ANALYSIS</h3>
+              <p class="card-desc">
+                Multi-vendor teammate capability alignment and automated requirement gap bridging for complex prime and subcontractor teaming arrangements.
+              </p>
+            </a>
+
+            <a href="compliance-evaluator.html" class="aero-glass-card">
+              <div class="aero-glass-shine"></div>
+              <h3 class="card-heading">Compliance<br>Evaluator</h3>
+              <p class="card-desc">
+                AI-assisted solicitation requirement shredding, automated cross-reference compliance matrixing, and real-time narrative deficit detection.
+              </p>
+            </a>
+
+          </div>
+
+          <!-- Bottom Row: 2 Cards Centered -->
+          <div class="aero-cards-row row-2">
+            
+            <a href="predictive-pipeline.html" class="aero-glass-card">
+              <div class="aero-glass-shine"></div>
+              <h3 class="card-heading">PREDICTIVE<br>PIPELINE</h3>
+              <p class="card-desc">
+                Win-probability forecasting based on historical agency award parameters, pricing intelligence, and predictive competitor positioning models.
+              </p>
+            </a>
+
+            <a href="team-profiles.html" class="aero-glass-card">
+              <div class="aero-glass-shine"></div>
+              <h3 class="card-heading">TEAM<br>PROFILES</h3>
+              <p class="card-desc">
+                Automated key personnel resume tailoring, labor category mapping, clearance tracking, and dynamic past performance attribution matrixing.
+              </p>
+            </a>
+
+          </div>
+
         </div>
       </section>
+
     </main>
   </div>
 
